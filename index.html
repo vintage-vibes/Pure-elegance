@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Elegance Salon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="image/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="navbar">
+
+            <div class="logo">
+               <img src="image/logo.jpeg" alt="">
+            </div>
+
+              <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <!-- <a href="#">Home</a> -->
+                <a href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#feature">More Info</a>
+                <a href="#review">Reviews</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </div>
+
+        <div class="menu-overlay" id="menu-overlay"></div>
+
+        <div class="hero">
+           <h1> Pure Elegance Salon</h1> 
+            <p class="subtitle">
+                Unleash Your Inner Glam
+            </p>
+            <a href="#service" class="service-btn">
+                Our Services
+            </a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+       <div class="section-head">
+        <h1>Welcome To Pure Elegance Salon</h1>
+       </div>
+
+       <div class="about-container">
+        <div class="image">
+            <img src="image/pure.33.jpg" alt="">
+        </div>
+        <div class="description">
+
+            <h3>Natural beauty through professional care</h3>
+            <p>
+               Pure Elegance Salon in Ladysmith offers a refined beauty experience 
+                where luxury meets affordability. We are dedicated to enhancing your 
+                natural beauty in a calm, relaxing atmosphere designed just for you. 
+                Our skilled professionals take pride in delivering personalized care, 
+                using quality products and modern techniques to ensure you leave feeling 
+                confident, refreshed, and truly pampered every time you visit.
+            </p>
+        </div>
+        <div class="icons">
+            <div class="icon-box">
+                <i class="fas fa-cut"></i>
+                <span>Hair Styling</span>
+            </div>
+
+            <div class="icon-box">
+                <i class="fas fa-user-plus"></i>
+                <span>Installations</span>
+            </div>
+
+            <div class="icon-box">
+                <i class="fas fa-hand-sparkles"></i>
+                <span>Beauty Care</span>
+            </div>
+
+            <div class="icon-box">
+                <i class="fas fa-eye"></i>
+                <span>lashes</span>
+            </div>
+        </div>
+
+       </div>
+
+
+    </section>
+
+    <section class="services" id="service">
+        <div class="section-head">
+            <h1> Our services</h1>
+        </div>
+
+        <div class="service-container">
+            <div class="service-flex">
+                                <div class="service-box box-1" onclick="openGallery('nails')">
+                        <h3>Nails</h3>
+                        <a href="javascript:void(0)" class="service-btn">See More</a>
+                    </div>
+
+                    <div class="service-box box-2" onclick="openGallery('braids')">
+                        <h3>Braids</h3>
+                        <a href="javascript:void(0)" class="service-btn">See More</a>
+                    </div>
+
+                    <div class="service-box box-3" onclick="openGallery('mini-cornrows')">
+                        <h3>Cornrows</h3>
+                        <a href="javascript:void(0)" class="service-btn">See More</a>
+                    </div>
+
+                    <div class="service-box box-4" onclick="openGallery('beaded-braids')">
+                        <h3>Beaded Braids</h3>
+                        <a href="javascript:void(0)" class="service-btn">See More</a>
+                    </div>
+
+                    <div class="service-box box-5" onclick="openGallery('weaves')">
+                        <h3>Weaves</h3>
+                        <a href="javascript:void(0)" class="service-btn">See More</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+            <div id="galleryModal" class="gallery-modal">
+            <span class="close" onclick="closeGallery()">&times;</span>
+            <div class="gallery-content" id="galleryContent">
+                <!-- Images will be injected here -->
+            </div>
+            </div>
+
+    <section class="features" id="feature">
+    <div class="section-head">
+        <h1>Why Choose Pure Elegance</h1>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-box feature-1">
+            <h3>Professional Team</h3>
+            <p>Our experienced stylists and therapists ensure you receive the highest quality care every time you visit.</p>
+        </div>
+        <div class="feature-box feature-2">
+            <h3>Luxury Experience</h3>
+            <p>Relax in a premium, calming environment designed to make you feel pampered and confident.</p>
+        </div>
+        <div class="feature-box feature-3">
+            <h3>Affordable Services</h3>
+            <p>Enjoy high-end salon treatments at prices that make luxury accessible to everyone.</p>
+        </div>
+        <div class="feature-box feature-4">
+            <h3>Premium Products</h3>
+            <p>We use only the finest professional products to ensure lasting results and healthy hair & skin.</p>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="banner-content">
+        <h2>Elevate Your Beauty</h2>
+        <p>Experience luxury care tailored just for you</p>
+        <a href="https://wa.me/27631458470?text=Hi%20I%20would%20like%20to%20book%20an%20appointment" class="banner-btn">Book Now</a>
+    </div>
+</section>
+
+    <section class="testimonial" id="review">
+    <div class="section-head">
+        <h1>What Our Clients Say</h1>
+    </div>
+
+    <div class="testimonial-container">
+        <div class="card">
+            <p>"Siyabonga sisi bamluke kahle and ave ebe nesineke uFezi losisi esivova Mina ngicishe ngathi akayekwe sambe"</p>
+            <div class="client-name">Happy Client</div>
+        </div>
+        <div class="card">
+            <p>"Hey love nga install yazi and im so happy nge quality yenwele zakho koda ngisafuna ezinye"</p>
+            <div class="client-name">Lihle</div>
+        </div>
+        <div class="card">
+            <p>"Dali ngyabonga ungenze zona"</p>
+            <div class="client-name">Sli Ndaba</div>
+        </div>
+        <div class="card">
+            <p>"hi Ayanda ngyabonga kakhul boo awukaze wangiphoxa kuma hairstyle ami ngedwa engikufuxek ngawo"</p>
+            <div class="client-name">buhle</div>
+        </div>
+        <div class="card">
+            <p>"Thank You sis i got the frontal i love it"</p>
+            <div class="client-name">Snakhorh</div>
+        </div>
+        <div class="card">
+            <p>"My baby Shark you are doing the most"</p>
+            <div class="client-name">Mamachandu Ramz</div>
+        </div>
+    </div>
+
+    <div class="pages">
+        <div class="page active" data-page="1">1</div>
+        <div class="page" data-page="2">2</div>
+        <div class="page" data-page="3">3</div>
+    </div>
+</section>
+
+<footer class="footer" id="contact">
+    <div class="footer-container">
+        
+        <div class="logo">
+                <img src="image/logo.jpeg" alt="">
+            </div>
+
+        <div class="footer-column">
+            
+            <h3>About Us</h3>
+            <p>
+                Pure Elegance Salon in Ladysmith offers luxurious beauty services 
+                with a touch of elegance. We provide professional care in a relaxing atmosphere.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Services</h3>
+            <ul>
+                <li>Hair Styling</li>
+                <li>lashes</li>
+                <li>Manicure & Pedicure</li>
+                <li>Weaves</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>
+                36 Alexandra Street,First Floor,Last Salon upstairs, Ladysmith <br>
+                Phone: +27 65 145 8470 <br>
+                Email: pelegancesalon@gmail.com
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="socials">
+                <a href="https://www.instagram.com/ayan_da16/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/groups/665511002779849" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@aayandamabizela?lang=en-GB" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 Pure Elegance Salon. All Rights Reserved.
+    </div>
+</footer>
+
+
+    
+</body>
+<script src="script.js"></script>
+</html>
