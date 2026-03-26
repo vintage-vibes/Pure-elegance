@@ -27,7 +27,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 60px;
+    padding: 20px 40px;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1050;
 }
@@ -115,28 +115,29 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-
     font-family: 'Playfair Display', serif;
 }
 
 .hero h1 {
     font-size: 3em;
+    color: #bd7397;
     font-weight: 400;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .subtitle {
     font-size: 1.1em;
     font-weight: 500;
     letter-spacing: 4px;
-    margin-bottom: 30px;
+    font-style: italic;
+    margin-bottom: 10px;
     color: #ddd;
 }
 
 /* Button */
 .service-btn {
-    padding: 12px 35px;
+    padding: 10px 35px;
     background: transparent;
     color: #fff;
     font-size: 1.1em;
@@ -144,6 +145,7 @@ html{
     letter-spacing: 2px;
     cursor: pointer;
     transition: 0.3s;
+    margin-bottom: 20px;
   
 }
 
@@ -169,7 +171,7 @@ html{
 /* Section Heading */
 .section-head {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .section-head h1 {
@@ -225,7 +227,6 @@ html{
 }
 .description p {
     font-size: 0.98em;
-
     line-height: 1.9;
     color: #2B2B2B;
 }
@@ -234,14 +235,16 @@ html{
 .icons {
     display: flex;
     gap: 25px;
-    margin-top: 25px;
+    margin-top: 10px;
     flex-wrap: wrap;
 }
 
 .icon-box {
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     font-size: 14px;
     color: #7A5C6E;
@@ -323,7 +326,7 @@ html{
 .service-box h3 {
     font-size: 2.1em;
     letter-spacing: 1px;
-    color: #fff;
+    color: #bd7397;
     z-index: 2;
 }
 
@@ -416,7 +419,7 @@ html{
     font-size: 38px;
     font-weight: 400;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .features .section-head h1::after {
@@ -543,8 +546,8 @@ html{
 .banner {
     height: 60vh;
     background: linear-gradient(
-        rgba(26, 15, 31, 0.6),
-        rgba(150, 82, 131, 0.284)
+        rgba(35, 24, 40, 0.493),
+        rgba(105, 86, 100, 0.286)
     ),
     url("image/pure.16.jpg") center/cover no-repeat;
 
@@ -559,14 +562,14 @@ html{
 .banner-content h2 {
     font-size: 3em;
     font-weight: 400;
-    color: #fff;
+    color: #bd7397;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
 .banner-content p {
     font-size: 0.98em;
-    color: #C77DAA;
+    color: #fff;
     margin-bottom: 25px;
     letter-spacing: 2px;
 }
@@ -574,12 +577,12 @@ html{
 /* Button */
 .banner-btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 20px 40px;
     border: 1px solid #C77DAA;
     color: #fff;
     border-radius: 20px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 1.2em;
     letter-spacing: 2px;
     transition: 0.3s;
     font-weight: 600;
@@ -612,7 +615,7 @@ html{
     font-size: 2.1em;
     font-weight: 400;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .section-head h1::after {
@@ -641,7 +644,7 @@ html{
     justify-content: center;
     align-content: center;
     text-align: center;
-    flex: 0 0 65%; /* 2 cards per row */
+    flex: 1 1 85%; /* 2 cards per row */
     background: #fff;
     padding: 25px;
     border-radius: 12px;
@@ -778,7 +781,7 @@ html{
 @media (max-width: 768px) {
 
     .header {
-    height: 80vh;
+    height: 90vh;
     
 }
 
